@@ -1,0 +1,39 @@
+body, html
+  height 100%
+  width 100%
+  font-family: "Adobe Heiti Std R"
+  user-select: none
+  box-sizing: border-box
+  list-style: none
+  line-height: 1
+
+// 清除浮动
+clearfix()
+  display inline-block
+  &:after
+    display: block
+    content: "."
+    height: 0
+    line-height: 0
+    clear: both
+    visibility: hidden
+
+// flex常用布局
+flex-center()
+  display flex
+  justify-content center
+  align-items center
+
+flex-between()
+  display flex
+  justify-content space-between
+  align-items: center
+
+flex-around()
+  display flex
+  justify-content space-around
+  align-items: center
+
+flex-column()
+  display flex
+  flex-direction column
